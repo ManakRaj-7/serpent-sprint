@@ -72,6 +72,20 @@ Your site URL will look like:
 
 > Note: If you deploy to a project page, you may need to set a `base` path in `vite.config.ts` after you know your repository name.
 
+## Vercel Deployment
+
+You can also deploy this app on Vercel. Use these settings when importing the GitHub repository:
+
+- Framework preset: `Vite`
+- Build command: `npm run build`
+- Output directory: `dist`
+
+A `vercel.json` file is included so Vercel will treat this as a static build and route all requests to `index.html`.
+
+After deployment, Vercel will give you a live app URL like:
+
+- `https://<project-name>.vercel.app`
+
 ## Workflow
 
 The workflow builds the app and deploys the `dist` output to the `gh-pages` branch using GitHub Pages.
